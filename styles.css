@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 40px;
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+.balloon-container {
+  margin: 20px 0;
+}
+
+.balloon {
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.left-balloon {
+  left: 50px;
+  animation-delay: 0s;
+}
+
+.right-balloon {
+  right: 50px;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.heart-container {
+  margin-top: 20px;
+}
+
+.heart {
+  width: 60px;
+  position: relative;
+  animation: heart-beat 1.5s infinite ease-in-out;
+}
+
+.heart-left {
+  left: 20px;
+  animation-delay: 0.5s;
+}
+
+.heart-right {
+  right: 20px;
+  animation-delay: 1s;
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.content {
+  margin: 40px auto;
+}
+
+.personal-message {
+  font-size: 24px;
+  color: #ff1493;
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.love-signature {
+  font-size: 20px;
+  color: #ff69b4;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer-message {
+  font-size: 18px;
+  color: #ff69b4;
+}
